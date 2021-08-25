@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: my-helloworld-rs
+  name: josefs-secret-rs
   labels:
-    app: my-helloworld
+    app: josefs-secret
 spec:
   replicas: 6
   selector:
     matchLabels:
-      app: my-helloworld
+      app: josefs-secret
   template:
     metadata:
       labels:
-        app: my-helloworld
+        app: josefs-secret
     spec:
       containers:
-      - name: my-helloworld-app
-        image: stacksimplify/kube-helloworld:1.0.0
+      - name: josefs-secret-app
+        image: matte250/josefs-secret:latest

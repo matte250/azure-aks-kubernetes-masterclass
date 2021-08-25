@@ -1,0 +1,10 @@
+## Download Azure Cli
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+
+## Install CLI
+az aks install-cli
+az login
+
+## Connect to cluster through Azure.
+az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Name>
+
